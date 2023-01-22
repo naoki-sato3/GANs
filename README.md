@@ -22,7 +22,7 @@ Please change entity name `XXXXXX` to your wandb entitiy.
 parser.add_argument("--wandb_entity", type=str, default='XXXXXX', help='entity of wandb team')
 ```
 
-# How to use
+# How To Use This Code
 Please change optimizer Adam, AdaBelief, or RMSProp.
 ```
 parser.add_argument('--optimizer', type=str, default='Adam', help='Adam | AdaBelief | RMSProp')
