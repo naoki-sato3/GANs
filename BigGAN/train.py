@@ -226,5 +226,5 @@ def main():
   run(config)
 
 if __name__ == '__main__':
-  wandb.init(project = "BigGAN_AdaBelief_grid")
+  wandb.init(project = "BigGAN")
   main()
