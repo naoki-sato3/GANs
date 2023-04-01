@@ -16,11 +16,11 @@ The figure above shows the results of training DCGAN with AdaBelief, with a batc
 **Top Left:** The loss function values for the generator and discriminator are plotted. The blue line is the generator plot and the orange line is the discriminator plot. **Top Right:** The FID score is plotted against the number of steps. The first FID score was measured at 400k steps. **Bottom Left:** The gradient of the generator loss function is plotted versus the number of steps. **Bottom Right:** The gradient of the discriminator loss function is plotted versus the number of steps.
 
 
-Moreover, we can check that, on training DCGAN on LSUN-Bedroom, the measured critical batch size when the stopping condition is FID ≦ 50 is larger than the measured critical batch size when the stopping condition is FID ≦ 70. Please see the graph below.
+Moreover, we can check that, on training DCGAN on the LSUN-Bedroom dataset, the measured critical batch size when the stopping condition is FID ≦ 50 is larger than the measured critical batch size when the stopping condition is FID ≦ 70. Please see the graph below.
 <img width="724" alt="image" src="https://user-images.githubusercontent.com/95958702/229266481-e1eb93b0-555f-4fb6-b141-c5d63dbfed84.png">
 
 This is a further plot of the graph for FID ≦ 50, in addition to Figure 2 in our paper.
-It can be seen that as the stopping condition is tightened, the measured Critical Batch Size increases with AdaBelief and RMSProp.
+It can be seen that as the stopping condition is tightened, the measured critical batch size increases with AdaBelief and RMSProp.
 
 ## Reply for the Comment 7
 Figures 2 and 4 show the average of three runs. We further show the graph below. 
