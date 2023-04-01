@@ -10,7 +10,8 @@ In practical parts, we use the Fre ́chet inception distance (FID) as the perfor
 ## Reply for the Comment 6
 As you know, GAN training was very unstable and often resulted in vanishing gradient, especially when the batch size was extremely small.
 Therefore, we used a more gradual stopping condition. An example is shown below.
-<img width="1212" alt="スクリーンショット 2023-04-01 14 42 47" src="https://user-images.githubusercontent.com/95958702/229267891-9690a97e-184e-4c97-8571-501b67f24423.png">
+<img width="1328" alt="result_failed" src="https://user-images.githubusercontent.com/95958702/229269610-97114c33-88e6-4945-9d09-f36c4e0680a7.png">
+
 The figure above shows the results of training DCGAN with AdaBelief, with a batch size of 4. All other parameters are exactly the same as used in our paper.
 **Top Left:** The loss function values for the generator and discriminator are plotted. The blue line is the generator plot and the orange line is the discriminator plot. **Top Right:** The FID score is plotted against the number of steps. The first FID score was measured at 400k steps. **Bottom Left:** The gradient of the generator loss function is plotted versus the number of steps. **Bottom Right:** The gradient of the discriminator loss function is plotted versus the number of steps.
 
