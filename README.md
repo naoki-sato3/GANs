@@ -7,7 +7,7 @@ Previous results have shown that a two time-scale update rule (TTUR) using learn
 In practical parts, we use the Fre ́chet inception distance (FID) as the performance measure for training GANs of TTUR, and we provide numerical results indicating that the number of steps needed to achieve a low FID score decreases as the batch size increases and that the SFO complexity increases once the batch size exceeds the measured critical batch size. Moreover, we show that measured critical batch sizes are close to estimated batch sizes based on our theoretical results.
 
 # Additional Experiments Results to Refute Reviewer gyzT
-## Reply for the Comment 6
+## Reply to Comment 6
 As you know, GAN training was very unstable and often resulted in vanishing gradient, especially when the batch size was extremely small.
 Therefore, we used a more gradual stopping condition. An example is shown below.
 <img width="1328" alt="result_failed" src="https://user-images.githubusercontent.com/95958702/229269610-97114c33-88e6-4945-9d09-f36c4e0680a7.png">
@@ -22,7 +22,7 @@ Moreover, we can check that, on training DCGAN on the LSUN-Bedroom dataset, the 
 This is a further plot of the graph for FID ≦ 50, in addition to Figure 2 in our paper.
 It can be seen that as the stopping condition is tightened, the measured critical batch size increases with AdaBelief and RMSProp.
 
-## Reply for the Comment 7
+## Reply to Comment 7
 Figures 2 and 4 show the average of three runs. We further show the graph below. 
 ![Nbb01r-4](https://user-images.githubusercontent.com/95958702/229267325-9cc4b9d5-f86c-43bb-9c51-4b8cbca3146b.png)
 **Left:** a modified version of Figure 2. **Right:** a modified version of Figure 4.
