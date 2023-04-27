@@ -1,4 +1,4 @@
-# Existence and Estimation of Critical Batch Size for Training generative adversarial networks of two time-scale update rule
+# Existence and Estimation of Critical Batch Size for Training generative adversarial networks of two time-scale update rule @ICML2023
 Code for reproducing experiments in our paper.  
 Our experiments were based on the basic code for DCGAN, WGAN-GP, and BigGAN.
 
